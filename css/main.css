@@ -1,0 +1,65 @@
+.img
+{
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.container
+{
+    transition: all .3s;
+}
+
+.container:hover
+{
+    box-shadow: 2px 2px 4px gray;
+}
+
+@keyframes slide
+{
+    45%
+    {
+        background-image: url('../img/fbt1.png');
+        filter: blur(0px);
+        transform: rotateY(0deg);
+    }
+    47.5%
+    {
+        filter: blur(4px);
+        background-image: url('../img/fbt2.png');
+        transform: rotateY(90deg);
+    }
+    50%
+    {
+        filter: blur(0px);
+        transform: rotateY(180deg);
+    }
+
+
+    95%
+    {
+        background-image: url('../img/fbt2.png');
+        filter: blur(0px);
+        transform: rotateY(180deg);
+    }
+    97.5%
+    {
+        filter: blur(4px);
+        background-image: url('../img/fbt1.png');
+        transform: rotateY(90deg);
+    }
+    100%
+    {
+        filter: blur(0px);
+        transform: rotateY(0deg);
+    }
+
+}
+
+*[slideshow=true]
+{
+    background-image: url('../img/fbt1.png');
+    animation-name: slide;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}

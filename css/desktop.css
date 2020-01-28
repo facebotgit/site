@@ -1,0 +1,22 @@
+.table-container
+{
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.img
+{
+    width: 635px;
+    height: 344px;
+    display: inline-block;
+}
+
+tr
+{
+    transition: all .2s;
+}
+
+tr:hover
+{
+    background-color: rgba(202, 202, 202, 0.6);
+}
