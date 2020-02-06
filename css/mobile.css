@@ -11,3 +11,8 @@
     height: 51.63vw;
     display: inline-block;
 }
+
+ul
+{
+    text-align: left;
+}
