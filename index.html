@@ -1,109 +1,243 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
     <title>FaceBOT</title>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
 
     <link href="./css/main.css" rel="stylesheet">
+    <link href="./css/price.css?teste" rel="stylesheet">
 
 </head>
 
 <body>
-    <div class="jumbotron text-center">
-        <h1>FaceBOT</h1>
-        <p>Auto poster para Facebook</p>
-    </div>
-    <br>
+    <ul class="top-navbar">
+        <li>
+            <a href="#" padding="false">
+                <img id="fbtlogo" height="60px" src="img/fbtlogo2.png">
+            </a>
+        </li>
+        <li>
+            <a href="#ec-tempo">Sobre o FaceBOT</a>
+        </li>
+        <li>
+            <a href="#precos">Tabela de preços</a>
+        </li>
+        <li>
+            <a href="#requisitos">Requisitos</a>
+        </li>
+        <li>
+            <a href="https://criarmeulink.com.br/u/1596484988406">Contato</a>
+        </li>
+    </ul>
+    <div class="page-body" style="z-index: -1000; text-align: center;">
+        <div class="banner-container">
+            <img src="img/banner2.png" height="100%" class="banner">
+        </div>
+        <div class="second-part">
+            <div class="card-advantage cleft">
+                <img src="./img/time-money.png"><br>
+                <div class="item">
+                    <h1 id="ec-tempo">Economize tempo</h1>
+                    <p>
+                        Ao invés de perder horas e horas publicando anúncios,
+                        deixe que o FaceBOT faça isso por você! Você pode escolher
+                        quantos horários quiser que o FaceBOT irá publicar!
+                    </p>
+                </div>
+            </div>
 
-    <div class="text-center">
-        <div class="slideshow">
-            <div class="img" slideshow="true"></div>
-            <script src="./src/slideshow.js"></script>
+            <div class="card-advantage cright">
+                <img src="./img/fb-groups.png">
+                <div class="item">
+                    <h1>Publique em vários grupos diferentes</h1>
+                    <p>Publique em quantos grupos quiser!
+                        Seu único trabalho escolher a quantidade
+                        de grupos!
+                    </p>
+                </div>
+            </div>
+
+            <div class="card-advantage cleft">
+                <img src="./img/fb-account.jpg">
+                <div class="item">
+                    <h1>Número ilimitado de contas do Facebook</h1>
+                    <p>Você pode adicionar quantas contas
+                        achar necessário. Assim, cada publicação
+                        será feita em uma conta diferente!
+                    </p>
+                </div>
+            </div>
+
+            <div class="card-advantage cright">
+                <img src="./img/chart.jpg">
+                <div class="item">
+                    <h1>Obtenha mais resultado</h1>
+                    <p>
+                        Publique anúncios em massa, assim
+                        melhor divulgando seu produto/serviço,
+                        e, consequentemente obtendo mais resultado.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card-advantage cleft">
+                <img src="./img/publish.png">
+                <div class="item">
+                    <h1>Anúncios ilimitados</h1>
+                    <p>
+                        Crie quantos anúncios desejar!
+                        Você pode adicionar quantos anúncios
+                        quiser, pois o número de anúncios
+                        é totalmente ilimitado.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card-advantage cright">
+                <img src="./img/edit.jpg">
+                <div class="item">
+                    <h1>Ferramentas de edição de anúncios</h1>
+                    <p>
+                        Crie anúncios elaborados, chamativos e de alto nível!
+                    </p>
+                </div>
+            </div>
+
+            <br><hr><br>
+
+            <section class="pricing py-5" id="precos">
+                <div class="container">
+                  <div class="row">
+                    <!-- Free Tier -->
+                    <div class="col-lg-4">
+                      <div class="card mb-5 mb-lg-0">
+                        <div class="card-body">
+                          <h5 class="card-title text-muted text-uppercase text-center">Pessoal</h5>
+                          <h6 class="card-price text-center">R$ 50<span class="period">/mês</span></h6>
+                          <span class="period">+ R$ 50 (compra)</span>
+                          <hr>
+                          <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Um usuário</li>
+                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Anúncios ilimitados</li>
+                            <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Contas ilimitadas (Facebook)</li>
+                            <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Sem anúncios</li>
+                          </ul>
+                          <a href="https://criarmeulink.com.br/u/1596484988406" class="btn btn-block btn-primary text-uppercase">Entrar em contato</a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Plus Tier -->
+                    <div class="col-lg-4">
+                        <div class="card mb-5 mb-lg-0" better-option="true">
+                            <div class="card-body">
+                              <h5 class="card-title text-muted text-uppercase text-center">Empresarial Lite</h5>
+                              <h6 class="card-price text-center">R$ 75<span class="period">/mês</span></h6>
+                              <span class="period">+ R$ 200 (compra)</span>
+                              <hr>
+                              <ul class="fa-ul">
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Até 5 usuários</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Anúncios ilimitados</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Contas ilimitadas (Facebook)</li>
+                                <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Sem anúncios</li>
+                              </ul>
+                              <a href="https://criarmeulink.com.br/u/1596484988406" class="btn btn-block btn-primary text-uppercase">Entrar em contato</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pro Tier -->
+                    <div class="col-lg-4">
+                        <div class="card mb-5 mb-lg-0">
+                            <div class="card-body">
+                              <h5 class="card-title text-muted text-uppercase text-center">Empresarial Pro</h5>
+                              <h6 class="card-price text-center">R$ 100<span class="period">/mês</span></h6>
+                              <span class="period">+ R$ 300 (compra)</span>
+                              <hr>
+                              <ul class="fa-ul">
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Até 15 usuários</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Anúncios ilimitados</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Contas ilimitadas (Facebook)</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Sem anúncios</li>
+                              </ul>
+                              <a href="https://criarmeulink.com.br/u/1596484988406" class="btn btn-block btn-primary text-uppercase">Entrar em contato</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <br><hr><br>
+
+              <div class="text-center" style="width: 100vw;">
+              <div class="requiriments" id="requisitos">
+                  <h2>Requisitos mínimos</h2>
+                  <hr>
+                  <ul>
+                    <li>Windows 10, 8.1, 8 ou 7 com Servivce Pack 1 (Recomendado: Windows 10)</li>
+                    <li>.NET Framework 4.6.1</li>
+                    <li>Processador dual-core com 1.6GHz (Recomendado: 2.0GHz)</li>
+                    <li>2GB de RAM (Recomendado: 3GB)</li>
+                  </ul>
+              </div>
+            </div>
+
+            <br>
+            <hr>
+            <div class="text-center" style="width: 100vw;">
+                <h4>FaceBOT - Auto-poster para Facebook</h4>
+                <a href="https://criarmeulink.com.br/u/1596484988406" target="_blank"><button class="btn btn-outline-secondary">Entrar em contato</button><br></a>
+                <span style="opacity: 0.7;">(contato@facebot.ml)</span>
+            </div>
+            <br>
         </div>
     </div>
-
-    <br>
-
-    <div class="container">
-        <h2 id="como-funciona">Como funciona?</h2>
-        <p>O FaceBOT é um auto-poster que publica anúncios em massa nos grupos do Facebook.</p>
-    </div>
-
-    <div class="container">
-        <h2 id="economize-tempo">Economize tempo</h2>
-        <p>Deixe que o FaceBOT publique anúncios para você. Seu único trabalho será programar o(s) horário(s).</p>
-    </div>
-
-    <div class="container">
-        <h2 id="obtenha-mais-resultado">Obtenha mais resultado</h2>
-        <p>Crie e publique anúncios em massa usando o FaceBOT.</p>
-    </div>
-
-    <br>
-    <div class="text-center table-container">
-        <h3>Escolha o melhor plano para você ou sua empresa:</h3>
-        <table class="table">
-            <tr style="background-color: lightgreen;">
-                <th>Plano</th>
-                <th>Mensalidade</th>
-                <th>Compra do software</th>
-                <th>Máx. Computadores</th>
-            </tr>
-            <tr>
-                <th>Pessoal</th>
-                <th>R$ 50</th>
-                <th>R$ 75</th>
-                <th>1</th>
-            </tr>
-            <tr>
-                <th>Empresarial Lite</th>
-                <th>R$ 75</th>
-                <th>R$ 200</th>
-                <th>5</th>
-            </tr>
-            <tr>
-                <th>Empresarial Pro</th>
-                <th>R$ 125</th>
-                <th>R$ 300</th>
-                <th>15</th>
-            </tr>
-        </table>
-    </div>
-
-    <hr>
-    <div class="text-center">
-        <h1 id="requisitos">Requisitos mínimos</h1>
-        <ul>
-            <li>Windows 10, 8.1, 8 ou 7 com Servivce Pack 1 (Recomendado: Windows 10)</li>
-            <li>.NET Framework 4.6.1</li>
-            <li>Processador dual-core com 1.6GHz (Recomendado: 2.0GHz)</li>
-            <li>2GB de RAM (Recomendado: 3GB)</li>
-          </ul>
-          <h5>O programa pode funcionar em um computador abaixo desses requisitos, mas não é recomendado.</h5>
-    </div>
-    <br>
-
-    <hr>
-    <div class="text-center">
-        <h1>Ficou interessado?</h1>
-        <a class="btn btn-lg btn-default" href="mailto:facebot.email@gmail.com?subject=FaceBOT">Fale conosco</a>
-        <p><br>Caso o botão não funcione, fale conosco enviando um email para: facebot.email@gmail.com</p>
-    </div>
-    <br>
-
 </body>
 <script src="./src/main.js"></script>
+
+<script>
+    function layout() {
+        $('.card-advantage').attr('mobile', (window.innerWidth <= 970)+'');
+    }
+    $(window).resize(layout);
+    layout();
+    var bannerH = window.innerHeight - 60;
+    $('.page-body').scroll(function(data){
+        var percentage = $('.page-body').scrollTop() / (bannerH);
+        var calcPercentage = (1 - (percentage > 0.8 ? 0.8 : percentage));
+       // $('.banner').css('height', bannerH * calcPercentage + 'px').css('opacity', calcPercentage);
+        $('.banner-container').css('height', bannerH * calcPercentage + 'px').css('opacity', calcPercentage);
+    });
+</script>
+
 </html>
